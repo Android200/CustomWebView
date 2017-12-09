@@ -32,13 +32,11 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebViewClient(new CustomWebViewClient());
 
         webView.getSettings().setAppCacheEnabled(true);
-        webView.getSettings().setLoadsImagesAutomatically(true);
         webView.getSettings().setAppCacheMaxSize(1024 * 1024 * 8);
         webView.getSettings().setAppCachePath(this.getCacheDir().getAbsolutePath());
         webView.getSettings().setAllowFileAccess(true);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setVerticalScrollBarEnabled(false);
-        webView.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3");
         webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         webView.setOverScrollMode(WebView.OVER_SCROLL_NEVER);
         webView.loadUrl(webadd);
